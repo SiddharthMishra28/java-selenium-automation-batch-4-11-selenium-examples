@@ -135,4 +135,5 @@ public class UIInteractionsTest {
 		}
 		driver.quit();
 	}
+
 }
