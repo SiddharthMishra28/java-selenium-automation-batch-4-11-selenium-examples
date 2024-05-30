@@ -61,8 +61,8 @@ public class Hooks {
 	}
 	
 	public void launchBrowser() {
-		if(this.readConfig().get("browser").equalsIgnoreCase("chrome")) {
-			System.setProperty("webdriver.chrome.driver", this.readConfig().get("browser_driver_path"));
+		if(configProps.get("browser").equalsIgnoreCase("chrome")) {
+			System.setProperty("webdriver.chrome.driver", configProps.get("browser_driver_path"));
 			this.driver = new ChromeDriver();
 			this.driver.manage().window().maximize();
 		}
