@@ -6,7 +6,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import config.Hooks;
 
-public class UIAutomationUtils extends Hooks {
+public class UIAutomationUtils {
+	
+	WebDriver driver;
+	
+	public UIAutomationUtils(WebDriver driver) {
+		this.driver = driver;
+	}
 	
 	public void navigateToUrl(String url) {
 		driver.get(url);

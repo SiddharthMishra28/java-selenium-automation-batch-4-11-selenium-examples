@@ -5,7 +5,14 @@
     <classes>
       <class name="tests.LoginTest">
         <methods>
-          <include name="LoginIntoPortal"/>
+          <include name="loginPortal_reset_function_test"/>
+          <include name="beforeMethod"/>
+          <include name="afterSuite"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="LoginIntoPortal_valid_credentials"/>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
         </methods>
       </class> <!-- tests.LoginTest -->
     </classes>
