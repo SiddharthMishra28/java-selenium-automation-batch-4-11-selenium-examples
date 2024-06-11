@@ -17,15 +17,24 @@ import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+
 public class Hooks {
 	
 	public static Map<String, String> configProps = null;
 	public WebDriver driver = null;
+	public ExtentReports extent;
+	public ExtentSparkReporter spark;
 	
 	@BeforeSuite
 	public void beforeSuite() {
 		// READ CONFIG LOGIC
 		configProps = readConfig();
+		 extent = new ExtentReports();
+		 spark = new ExtentSparkReporter(configProps.get("reporting_directory"));
+		 extent.attachReporter(spark);
 	}
 	
 	@BeforeTest
@@ -35,13 +44,10 @@ public class Hooks {
 	
 	@BeforeMethod
 	public void beforeMethod() {
+		extent.createTest("MyFirstTest").log(Status.PASS, "Sample Reporting!");
 		this.launchBrowser();
 	}
-	
-	@Test
-	public void test() {
-		System.out.println("Dummy Test!");
-	}
+
 	
 	@AfterMethod
 	public void afterMethod() {
@@ -58,6 +64,7 @@ public class Hooks {
 	public void afterSuite() {
 		// REPORTING
 		// TEARDOWN
+		extent.flush();
 	}
 	
 	public void launchBrowser() {

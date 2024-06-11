@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Jun 08 10:01:30 IST 2024</td>
+<td>Started on:</td><td>Tue Jun 11 08:57:16 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>0 seconds (218 ms)</td>
+<tr><td>Total time:</td><td>36 seconds (36822 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,12 +76,12 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='temp.CarTrackTest.test_car_for_reliability()'><b>test_car_for_reliability</b><br>Test class: temp.CarTrackTest</td>
-<td><div><pre>java.lang.Error: Unresolved compilation problem: 
-	The constructor CarUtils() is undefined
-
-	at temp.Track.&lt;init&gt;(Track.java:9)
-	at temp.CarTrackTest.test_car_for_reliability(CarTrackTest.java:9)
+<td title='tests.LoginTest.LoginIntoPortal_test()'><b>LoginIntoPortal_test</b><br>Test class: tests.LoginTest<br>Parameters: null, null</td>
+<td><div><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
+	at utils.UIAutomationUtils.typeIntoInput(UIAutomationUtils.java:23)
+	at pages.LoginPage.login(LoginPage.java:21)
+	at tests.LoginTest.LoginIntoPortal_test(LoginTest.java:22)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -110,12 +110,12 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace843512726", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace843512726'><pre>java.lang.Error: Unresolved compilation problem: 
-	The constructor CarUtils() is undefined
-
-	at temp.Track.&lt;init&gt;(Track.java:9)
-	at temp.CarTrackTest.test_car_for_reliability(CarTrackTest.java:9)
+</pre></div><a href='#' onClick='toggleBox("stack-trace281049997", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace281049997'><pre>java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
+	at utils.UIAutomationUtils.typeIntoInput(UIAutomationUtils.java:23)
+	at pages.LoginPage.login(LoginPage.java:21)
+	at tests.LoginTest.LoginIntoPortal_test(LoginTest.java:22)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -145,8 +145,37 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>0</td>
-<td>temp.CarTrackTest@13c9d689</td></tr>
+<td>3</td>
+<td>tests.LoginTest@229f66ed</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.LoginTest.loginPortal_reset_input_test()'><b>loginPortal_reset_input_test</b><br>Test class: tests.LoginTest</td>
+<td></td>
+<td>4</td>
+<td>tests.LoginTest@229f66ed</td></tr>
+<tr>
+<td title='tests.LoginTest.LoginIntoPortal_test()'><b>LoginIntoPortal_test</b><br>Test class: tests.LoginTest<br>Parameters: username, password</td>
+<td></td>
+<td>4</td>
+<td>tests.LoginTest@229f66ed</td></tr>
+<tr>
+<td title='tests.LoginTest.LoginIntoPortal_test()'><b>LoginIntoPortal_test</b><br>Test class: tests.LoginTest<br>Parameters: mngr542003, sldjsalkd</td>
+<td></td>
+<td>4</td>
+<td>tests.LoginTest@229f66ed</td></tr>
+<tr>
+<td title='tests.LoginTest.LoginIntoPortal_test()'><b>LoginIntoPortal_test</b><br>Test class: tests.LoginTest<br>Parameters: jdsaldsal, nyseqAn</td>
+<td></td>
+<td>4</td>
+<td>tests.LoginTest@229f66ed</td></tr>
 </table><p>
 </body>
 </html>

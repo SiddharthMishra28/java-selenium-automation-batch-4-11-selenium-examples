@@ -9,15 +9,15 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">218</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">36,822</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">temp.CarTrackTest</td><td><a href="#m0">test_car_for_reliability</a></td><td rowspan="1">1717821091107</td><td rowspan="1">15</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.LoginTest</td><td><a href="#m0">LoginIntoPortal_test</a></td><td rowspan="1">1718076462461</td><td rowspan="1">3671</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">tests.LoginTest</td><td><a href="#m1">LoginIntoPortal_test</a></td><td rowspan="3">1718076441300</td><td rowspan="3">4418</td></tr><tr class="passedeven"><td><a href="#m2">LoginIntoPortal_test</a></td></tr><tr class="passedeven"><td><a href="#m3">LoginIntoPortal_test</a></td></tr><tr class="passedeven"><td><a href="#m4">loginPortal_reset_input_test</a></td><td rowspan="1">1718076468815</td><td rowspan="1">4166</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">temp.CarTrackTest#test_car_for_reliability</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Error: Unresolved compilation problem: 
-	The constructor CarUtils() is undefined
-
-	at temp.Track.&lt;init&gt;(Track.java:9)
-	at temp.CarTrackTest.test_car_for_reliability(CarTrackTest.java:9)
+<h2>Default test</h2><h3 id="m0">tests.LoginTest#LoginIntoPortal_test</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>null</td><td>null</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">java.lang.IllegalArgumentException: Keys to send should be a not null CharSequence
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:96)
+	at utils.UIAutomationUtils.typeIntoInput(UIAutomationUtils.java:23)
+	at pages.LoginPage.login(LoginPage.java:21)
+	at tests.LoginTest.LoginIntoPortal_test(LoginTest.java:22)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -47,5 +47,9 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.LoginTest#LoginIntoPortal_test</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>username</td><td>password</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.LoginTest#LoginIntoPortal_test</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>mngr542003</td><td>sldjsalkd</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">tests.LoginTest#LoginIntoPortal_test</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>jdsaldsal</td><td>nyseqAn</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">tests.LoginTest#loginPortal_reset_input_test</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
