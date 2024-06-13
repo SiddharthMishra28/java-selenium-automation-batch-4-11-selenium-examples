@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SanityCheck">
+  <listeners>
+  	<listener class-name="reporting.ReportingListener"></listener>
+  </listeners>
+  <test thread-count="5" name="Guru99 Bank Portal Test">
+    <classes>
+      <class name="tests.LoginTest"/>
+    </classes>
+  </test> <!-- Guru99 Bank Portal Test -->
+</suite> <!-- SanityCheck -->

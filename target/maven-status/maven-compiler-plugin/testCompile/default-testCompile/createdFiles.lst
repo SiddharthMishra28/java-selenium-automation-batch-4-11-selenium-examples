@@ -1,0 +1,5 @@
+reporting\ReportingListener.class
+utils\UIAutomationUtils.class
+pages\LoginPage.class
+config\Hooks.class
+tests\LoginTest.class

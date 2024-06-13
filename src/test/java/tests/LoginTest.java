@@ -7,6 +7,7 @@ import java.io.IOException;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -16,16 +17,21 @@ import pages.LoginPage;
 public class LoginTest extends Hooks{
 
 	
-	@Test(dataProvider = "login_provider")
+	@Test(dataProvider = "login_provider", testName = "Login Test With Different Data")
 	public void LoginIntoPortal_test(String userId, String password) {
 		LoginPage page = new LoginPage(driver);
 		page.login("https://demo.guru99.com/V1/index.php", userId, password);
 	}
 	
-	@Test
+	@Test(testName = "Form Reset Test")
 	public void loginPortal_reset_input_test() {
 		LoginPage page = new LoginPage(driver);
 		page.reset("https://demo.guru99.com/V1/index.php", "mngr542003", "nyseqAn");
+	}
+	
+	@Test(testName = "Dummy Failure Scenario")
+	public void dummy_failure_scenario() {
+		Assert.assertTrue(false);
 	}
 	
 	@DataProvider(name = "login_provider")

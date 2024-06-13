@@ -25,16 +25,11 @@ public class Hooks {
 	
 	public static Map<String, String> configProps = null;
 	public WebDriver driver = null;
-	public ExtentReports extent;
-	public ExtentSparkReporter spark;
 	
 	@BeforeSuite
 	public void beforeSuite() {
 		// READ CONFIG LOGIC
 		configProps = readConfig();
-		 extent = new ExtentReports();
-		 spark = new ExtentSparkReporter(configProps.get("reporting_directory"));
-		 extent.attachReporter(spark);
 	}
 	
 	@BeforeTest
@@ -44,7 +39,7 @@ public class Hooks {
 	
 	@BeforeMethod
 	public void beforeMethod() {
-		extent.createTest("MyFirstTest").log(Status.PASS, "Sample Reporting!");
+		
 		this.launchBrowser();
 	}
 
@@ -64,7 +59,6 @@ public class Hooks {
 	public void afterSuite() {
 		// REPORTING
 		// TEARDOWN
-		extent.flush();
 	}
 	
 	public void launchBrowser() {
@@ -94,5 +88,9 @@ public class Hooks {
 		if(this.driver != null) {
 			this.driver.quit();
 		}
+	}
+	
+	public String getTestName() {
+		return "";
 	}
 }
